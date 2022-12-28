@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { FavoritesContextProvider } from "./store/favorites-context";
 import AllMeetupsPage from "./pages/AllMeetups";
 import NewEventPage from "./pages/NewEvent";
 import FavoritesPage from "./pages/Favorites";
@@ -7,19 +9,17 @@ import Layout from "./components/layout/Layout";
 function App() {
   return (
     <div>
-      <Layout>
-        <Switch>
-          <Route path="/" exact>
-            <AllMeetupsPage />
-          </Route>
-          <Route path="/new-event">
-            <NewEventPage />
-          </Route>
-          <Route path="/favorites">
-            <FavoritesPage />
-          </Route>
-        </Switch>
-      </Layout>
+      <Router>
+        <Layout>
+          <FavoritesContextProvider>
+            <Routes>
+              <Route path="/" element={<AllMeetupsPage />}></Route>
+              <Route path="/new-event" element={<NewEventPage />}></Route>
+              <Route path="/favorites" element={<FavoritesPage />}></Route>
+            </Routes>
+          </FavoritesContextProvider>
+        </Layout>
+      </Router>
     </div>
   );
 }

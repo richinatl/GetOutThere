@@ -1,9 +1,9 @@
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-import NewEventForm from "../components/meetups/NewMeetupForm";
+import NewEventForm from "../components/meetups/NewEventForm";
 
-function NewMeetupPage() {
-  const history = useHistory();
+function NewEventPage() {
+  const history = useNavigate();
 
   function addMeetupHandler(meetupData) {
     fetch(
@@ -27,4 +27,4 @@ function NewMeetupPage() {
   );
 }
 
-export default NewMeetupPage;
+export default NewEventPage;
