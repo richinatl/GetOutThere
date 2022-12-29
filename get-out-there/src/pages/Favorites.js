@@ -21,7 +21,7 @@ function FavoritesPage() {
 
   return (
     <section>
-      <h1>I want to get to these</h1>
+      <h1 className={classes.h1__favorites}>I want to get to these</h1>
       {content}
     </section>
   );

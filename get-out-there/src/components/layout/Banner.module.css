@@ -1,9 +1,27 @@
 .hero__image {
     background-image: url('../../assets/images/background.jpg');
-    height: 73vh;
+    height: 65vh;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0;
     background-repeat: fixed;
     margin-bottom: 7rem;
+}
+
+.ul__banner {
+    align-items: center;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 6rem;
+}
+
+.li__banner {
+ color: #00fefc;
+ font-family: Ubuntu, sans-serif;
+ font-size: 6rem;
+ font-weight: 700;
+ letter-spacing: .05rem;
+ text-shadow:  5px 10px 20px #f542e3;
 }

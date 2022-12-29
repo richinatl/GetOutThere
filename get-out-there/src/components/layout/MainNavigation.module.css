@@ -27,7 +27,6 @@
   .nav__li {
     display: flex;
     margin-bottom: 0.5rem;
-    margin-left: 2rem;
   }
 
   .nav__li:hover {
@@ -57,7 +56,9 @@
 
   .title {
     color: rgb(139, 226, 238);
-    font-size: 3rem;
+    font-size: 4rem;
     text-shadow: #fff 3px 0 10px;
     font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
   }

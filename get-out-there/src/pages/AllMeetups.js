@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import classes from "./AllMeetups.module.css";
 
 import MeetupList from "../components/meetups/MeetupList";
 
@@ -40,7 +41,7 @@ function AllMeetupsPage() {
   }
   return (
     <section>
-      <h1>All Meetups</h1>
+      <h1 className={classes.h1__list}>All Meetups</h1>
       <MeetupList meetups={loadedMeetups} />
     </section>
   );
