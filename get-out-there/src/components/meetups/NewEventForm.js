@@ -51,7 +51,7 @@ function NewEventForm(props) {
           />
         </div>
         <div className={classes.actions}>
-          <button>Add Meetup</button>
+          <button className={classes.btn__submit}>Add Meetup</button>
         </div>
       </form>
     </Card>

@@ -20,10 +20,10 @@ function MainNavigation() {
           <li className={classes.nav__li}>
             <Link to="/favorites">
               I'm There!
-              <span className={classes.badge}>
+              {/* <span className={classes.badge}>
                 {" "}
                 {favoritesCtx.totalFavorites}
-              </span>
+              </span> */}
             </Link>
           </li>
         </ul>
