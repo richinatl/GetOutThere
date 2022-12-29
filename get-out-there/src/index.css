@@ -5,10 +5,23 @@
 body {
   font-family: sans-serif;
   background-color: #2403fc;
+  margin: 0;
 }
 
-h1, h2 {
-  color: #333333;
+
+h1,
+h2,
+h3 {
+  color: #fff;
+  margin-bottom: 1rem;
+  line-height: 1.1;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
 }
 
 .btn {
