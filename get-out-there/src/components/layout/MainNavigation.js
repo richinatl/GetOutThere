@@ -10,7 +10,7 @@ function MainNavigation() {
     <header className={classes.header}>
       <div className={classes.title}>Get Out There</div>
       <nav className={classes.nav__container}>
-        <ul>
+        <ul className={classes.header__ul}>
           <li className={classes.nav__li}>
             <Link to="/">All Meetups</Link>
           </li>
@@ -19,7 +19,7 @@ function MainNavigation() {
           </li>
           <li className={classes.nav__li}>
             <Link to="/favorites">
-              These sound good
+              I'm There!
               <span className={classes.badge}>
                 {" "}
                 {favoritesCtx.totalFavorites}

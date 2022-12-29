@@ -1,0 +1,9 @@
+.hero__image {
+    background-image: url('../../assets/images/background.jpg');
+    height: 73vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 0;
+    background-repeat: fixed;
+    margin-bottom: 7rem;
+}
